@@ -12,7 +12,7 @@ public class DogAgeCalculator implements AnimalAgeCalculator{
         return dogAge;
     }
     
-    public void setDogAge(double dogAge){
+    public final void setDogAge(double dogAge){
         if (dogAge <0){
             throw new IllegalArgumentException("Inavlid entry; age must be greater than 0.");
         }

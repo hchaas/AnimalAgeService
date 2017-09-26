@@ -12,7 +12,7 @@ public class RabbitAgeCalculator implements AnimalAgeCalculator {
         return rabbitAge;
     }
 
-    public void setRabbitAge(double rabbitAge) {
+    public final void setRabbitAge(double rabbitAge) {
         if (rabbitAge < 0) {
             throw new IllegalArgumentException("Inavlid entry; age must be greater than 0.");
         } else {

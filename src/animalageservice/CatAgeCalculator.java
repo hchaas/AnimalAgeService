@@ -12,7 +12,7 @@ public class CatAgeCalculator implements AnimalAgeCalculator {
         return catAge;
     }
     
-    public void setCatAge(double catAge){
+    public final void setCatAge(double catAge){
         if (catAge < 0){
             throw new IllegalArgumentException("Invalid entry; age must be greater than 0.");
         }

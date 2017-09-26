@@ -23,7 +23,7 @@ public class DogAgeCalculator implements AnimalAgeCalculator{
     
     //this method assumes the average dog age is 12 and the average human age is 79
     @Override
-    public double calculateHumanAge(double dogAge){
+    public final double calculateHumanAge(double dogAge){
         return dogAge * 6.6;
     }
 }

@@ -8,7 +8,7 @@ public class CatAgeCalculator implements AnimalAgeCalculator {
         this.setCatAge(catAge);
     }
     
-    public double getCatAge(){
+    public final double getCatAge(){
         return catAge;
     }
     
@@ -23,7 +23,7 @@ public class CatAgeCalculator implements AnimalAgeCalculator {
     
     //this method assumes the average cat age is 15 and the average human age is 79
     @Override
-    public double calculateHumanAge(double catAge){
+    public final double calculateHumanAge(double catAge){
         return catAge * 5.3;
     }
 }

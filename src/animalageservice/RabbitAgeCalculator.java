@@ -8,7 +8,7 @@ public class RabbitAgeCalculator implements AnimalAgeCalculator {
         this.setRabbitAge(rabbitAge);
     }
 
-    public double getRabbitAge() {
+    public final double getRabbitAge() {
         return rabbitAge;
     }
 
@@ -22,7 +22,7 @@ public class RabbitAgeCalculator implements AnimalAgeCalculator {
 
     //this method assume the average rabbit age is 9 and the average human age is 79
     @Override
-    public double calculateHumanAge(double rabbitAge) {
+    public final double calculateHumanAge(double rabbitAge) {
         return rabbitAge * 8.8;
     }
 }
